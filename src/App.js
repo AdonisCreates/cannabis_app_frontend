@@ -22,7 +22,7 @@ const handleSubmit  = (event) =>{
 
 const getWeeds = async () => {
   try {
-    const response = await fetch('http://localhost:3000/weeds')
+    const response = await fetch('https://cannabis-app-api.herokuapp.com/weeds')
     const data = await response.json()
     console.log(data)
    } catch(error){
